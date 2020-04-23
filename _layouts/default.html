@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156418657-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156418657-1');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  </head>
+  <body>
+    <section class="top">
+        <div class="col-1">
+        </div>
+        <div class="col-2">
+          <div class="logo"></div>
+          <div class="navigation">
+              <nav><a href="#hva">Hvem er vi?</a></nav>
+              <nav><a href="#kompetanse">Tjenester</a></nav>
+              <nav><a href="#kontakt">KONTAKT</a></nav>
+          </div>
+        </div>
+    </section>
+
+
+
+{{content}}
+
+
+  </body>
+</html>
