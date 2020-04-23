@@ -199,7 +199,8 @@ a[href^=tel] {
     display:inline;
     font-size:32pt;
     font-weight:normal;
-    color:#fff;
+    color: rgb(238, 48, 34);
+
   }
 }
 
@@ -235,7 +236,6 @@ a[href^=tel] {
   display: flex;
   align-items: center;
   height:100%;
-  color: rgb(238, 48, 34);
 }
 
 .about-body {
