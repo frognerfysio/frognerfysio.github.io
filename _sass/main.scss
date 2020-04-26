@@ -92,7 +92,7 @@ a[href^=tel] {
 }
 
 @media only screen and (min-width: 1024px) {
-  .img-whiteboard {
+  .img-excercise {
     background-size: 100% auto;
     background-position: left center;
     background-attachment: fixed;
@@ -100,61 +100,25 @@ a[href^=tel] {
 }
 
 @media only screen and (max-width: 1024px) {
-  .img-whiteboard {
+  .img-excercise {
     background-size: auto auto;
     background-position: right;
   }
 }
 
-.img-whiteboard {
+.img-excercise {
   color: #000;
   background-image: url('/assets/img/trening.jpg');
   background-repeat: no-repeat;
 }
 
-.img-trees {
-  color: #fff;
-  background-color:#000;
-  background-image: url('/assets/img/trees.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-
-.img-computer {
+.img-ffot {
   color: #fff;
   background-color:#000;
   background-image: url('/assets/img/ffot.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-
-
-.img-grafitti {
-  color: #fff;
-  background-color:#000;
-  background-image: url('/assets/img/grafitti.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-
-.img-desk {
-  color: #fff;
-  background-color:#000;
-  background-image: url('/assets/img/desk.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-.img-finance {
-  color: #fff;
-  background-color:#000;
-  background-image: url('/assets/img/finance.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
 
 .about-section {
   width:100%;
@@ -231,8 +195,36 @@ a[href^=tel] {
 
 .trainer{
   float: left;
-  width: 33.33%;
-  padding: 0px;
+  width: 30%;
+  padding: 10px;
+}
+
+.trainer div {
+  height: 250px;
+  padding: 0 10px 10px 0;
+  margin: 0px;
+}
+
+.trainer #borge{
+  background-image: url('/assets/img/borge-nilsen.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.trainer #navn2{
+  background-image: url('/assets/img/placeholder-human.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.trainer #navn3{
+  background-image: url('/assets/img/placeholder-human.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.row {
+  max-width: 1000px;
 }
 
 .row::after {
