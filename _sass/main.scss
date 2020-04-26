@@ -229,7 +229,23 @@ a[href^=tel] {
 
 }
 
+.trainer{
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 1024px) {
+  .trainer {
+    width: 100%;
+  }
+}
 
 .header-body {
   width:100%;
@@ -243,12 +259,8 @@ a[href^=tel] {
   margin-top:5%;
   margin-bottom:40px;
 
+  box-sizing: border-box;
   p {
     line-height:1.5;
-  }
-  .trainer-borge {
-    background-image: url('/assets/img/placeholder-human.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
 }
