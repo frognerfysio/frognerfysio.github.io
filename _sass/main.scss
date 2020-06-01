@@ -26,7 +26,7 @@ body {
   margin:0;
   padding:0;
   font-family: 'Raleway', sans-serif;
-  font-size: 15pt;
+  font-size: 14pt;
 }
 
 /* disable phonenumber styling in safari*/
@@ -38,17 +38,14 @@ a[href^=tel] {
 .top {
   background-color:#fff;
   width:100%;
-  height:92 px;
   display: flex;
 
   .logo {
-    background-image: url('/assets/img/redcord_mini.jpg');
+    background-image: url('/assets/img/ffot-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
     margin-top:15px;
     height:75px;
-    width: 120px;
-    border-bottom:10px solid #000;
   }
 
   .navigation {
@@ -108,7 +105,7 @@ a[href^=tel] {
 
 .img-excercise {
   color: #000;
-  background-image: url('/assets/img/trening.jpg');
+  background-image: url('/assets/img/sykler-moller.JPG');
   background-repeat: no-repeat;
 }
 
@@ -119,6 +116,7 @@ a[href^=tel] {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
 
 .about-section {
   width:100%;
@@ -163,8 +161,8 @@ a[href^=tel] {
     display:inline;
     font-size:32pt;
     font-weight:normal;
-    color: rgb(238, 48, 34);
-
+    //color: rgb(238, 48, 34);
+    color: #000;
   }
 }
 
@@ -195,7 +193,7 @@ a[href^=tel] {
 
 .trainer{
   float: left;
-  width: 30%;
+  width: 45%;
   padding: 10px 10px 10px 0px;
 }
 
@@ -212,12 +210,6 @@ a[href^=tel] {
 }
 
 .trainer #david{
-  background-image: url('/assets/img/placeholder-human.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.trainer #iselin{
   background-image: url('/assets/img/placeholder-human.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -255,4 +247,138 @@ a[href^=tel] {
   p {
     line-height:1.5;
   }
+}
+
+
+@-webkit-keyframes imagesFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+ }
+ 
+ @-moz-keyframes imagesFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+ }
+ 
+ @-o-keyframes imagesFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+ }
+ 
+ @keyframes imagesFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+ }
+ 
+ 
+ #images img {
+   -webkit-animation-name: imagesFadeInOut;
+   -webkit-animation-timing-function: ease-in-out;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-duration: 8s;
+ 
+   -moz-animation-name: imagesFadeInOut;
+   -moz-animation-timing-function: ease-in-out;
+   -moz-animation-iteration-count: infinite;
+   -moz-animation-duration: 8s;
+ 
+   -o-animation-name: imagesFadeInOut;
+   -o-animation-timing-function: ease-in-out;
+   -o-animation-iteration-count: infinite;
+   -o-animation-duration: 8s;
+ 
+   animation-name: imagesFadeInOut;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-duration: 8s;
+ }
+ #images img:nth-of-type(1) {
+   -webkit-animation-delay: 6s;
+   -moz-animation-delay: 6s;
+   -o-animation-delay: 6s;
+   animation-delay: 6s;
+ }
+ #images img:nth-of-type(2) {
+   -webkit-animation-delay: 4s;
+   -moz-animation-delay: 4s;
+   -o-animation-delay: 4s;
+   animation-delay: 4s;
+ }
+ #images img:nth-of-type(3) {
+   -webkit-animation-delay: 2s;
+   -moz-animation-delay: 2s;
+   -o-animation-delay: 2s;
+   animation-delay: 2s;
+ }
+ #images img:nth-of-type(4) {
+   -webkit-animation-delay: 0;
+   -moz-animation-delay: 0;
+   -o-animation-delay: 0;
+   animation-delay: 0;
+ }
+
+#images {
+  position:relative;
+  margin:0 auto;
+}
+
+#images img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
