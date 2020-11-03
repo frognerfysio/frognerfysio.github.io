@@ -200,7 +200,7 @@ a[href^=tel] {
 
 .trainer{
   float: left;
-  width: 45%;
+  width: 32%;
   padding: 10px 10px 10px 0px;
 }
 
@@ -218,6 +218,12 @@ a[href^=tel] {
 
 .trainer #david{
   background-image: url('/assets/img/david.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.trainer #andreas{
+  background-image: url('/assets/img/andreas.jpg');
   background-repeat: no-repeat;
   background-size: contain;
 }
